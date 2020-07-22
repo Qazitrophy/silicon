@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    function passvalues ()
+    {
+      var firstname= document.getElementById("text").value;
+      localStorage.setItem("textvalue",firstname);
+      return false;
+    }
+  
+  
+  </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paynow</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--title bar logo link-->
+    <link rel="shortcut icon" type="image/png" href="image/PayNow.png">
+
+    
+   
+  </head>
+<body style="background-image:  url(image/back.jpg); background-repeat: no-repeat; background-size: cover;">
+
+    <header>
+
+
+
+      
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><img src="img\PayNow.png" width="75" height="40" alt="" loading="lazy">PayNow</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+             
+            </ul>
+            <span class="navbar-text">
+              Hotline
+            </span>
+          </div>
+        </nav>
+      </header>
+    <div>
+        <div class="container col-lg-6 col-lg-offset-6">
+        <div class="card" style="width: 40rem;">
+            <img src="image/onlineBills.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Home</a></h5><br>
+              <h5 class="card-title"><a class="btn btn-secondary btn-lg btn-block text-light" role="button" aria-pressed="true">Enter Your Billing Information Here</a></h5>
+
+              <p class="card-text">
+                 
+                
+                    <div class="col-md-12 mb-12">
+                      <label for="validationCustom04">Select Your Service Provider Name</label>
+                      <select class="custom-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Pabna Cable Vision PCV</option>
+                        <option>Natore City Cable</option>
+                        <option>Bengole Digital</option>
+                        <option>Jossore City Cable ltd</option>
+                        <option>Digi 21</option>
+                        <option>Dinajpur Vision</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                    
+                      <div class="col-md-12 mb-12" >
+                        <label for="formGroupExampleInput2">Enter your Mobile Number</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                      </div>
+
+                      <div class="col-md-12 mb-12" >
+                        <label for="formGroupExampleInput">enter your Email</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                      </div>
+                      <div class="col-md-12 mb-12">
+                        <label for="formGroupExampleInput2">Enter Your Name</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                      </div>
+                    </form>
+                <br>
+                <div class="col-md-12 mb-12" >
+
+                <form action= "paynow.html">
+                  <p>Enter your Bill Amount</p>
+                  <input class="col-md-12 mb-12 text-right"  type="text" id="text"/> 
+                  <input class="col-md-12 mb-12" type="submit" value="PAY" onclick="passvalues();"/>
+                </form>
+              </div>
+                <br> <br> 
+
+
+
+                
+                <!--
+                  <button class="btn btn-primary btn-lg btn-block"  type="submit">  Pay  </button>-->
+               
+                <!--
+                <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function() {
+                  'use strict';
+                  window.addEventListener('load', function() {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function(form) {
+                      form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) else{ 
+                          event.preventDefault(href="index2.html");
+                          event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                      }, false);
+                    });
+                  }, false);
+                })();
+                </script>-->
+               
+              
+            </div>
+          </div>
+        </div>
+ </div>
+   <br>
+ <!--Start Footer-->
+ <div>
+ 
+  <footer style="background-color: black;  text-align: center;">
+
+    <div class="container col-lg-4 col-lg-offset-4">
+      
+      <br><img src="image/Bank_logo.png"; width="430" height="150"  > <br><br>
+    </div>
+
+   
+  
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="www.facebook.com"><img border ="0" alt="mali logo" src="image\facebooklogo.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a> <span class="sr-only"></span></a></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img border ="0" alt="mali logo" src="image/Youtubelogo.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img border ="0" alt="mali logo" src="image\Twitwe.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link text-primary" href="www.instagram.com"><img border ="0" alt="instagram logo" src="image/Instagram.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+    </li>
+   
+  </ul>
+  <br>
+
+  <P style="color:white;"> <small>© 2020 Silicon ICT Limited. All Rights Reserved</small> </p></P>
+
+
+ </footer></div>
+    <script src="myscripts.js"></script>
+   <script src=index.js> </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

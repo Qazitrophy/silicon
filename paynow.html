@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paynow</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap css link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--title bar logo link-->
+    <link rel="shortcut icon" type="image/png" href="image/PayNow.png">
+  </head>
+<body style="background-image:  url(image/back.jpg); background-repeat: no-repeat; background-size: cover;">
+
+    <header>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="image/PayNow.png" width="75" height="40" alt="" loading="lazy">PayNow</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+          </ul>
+          <span class="navbar-text">
+            Hotline
+          </span>
+        </div>
+      </nav>
+    </header>
+    <!--col-lg-4 col-lg-offset-4-->
+   
+        
+<!--card on card / second cars start-->
+
+<div class="container col-lg-5 col-lg-offset-5">
+                <div class="card" style=  "width: 34rem; ">
+                    <img src="image/Pn_card.jpg" class="card-img-top" alt="PayNow">
+                    <div class="card-body">
+<!--Nav in side second Card-->
+<!-- nav 00 start  for pay amount-->
+<!-- Just an image -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
+  <a class="navbar-brand" href="#"><img src="img\PayNow.png" width="75" height="40" alt="" loading="lazy"> PAY BDT  <span id="result"></span>
+     <script>
+      document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    </script></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><span class="sr-only">(current)</span></a>
+      </li>
+     
+    </ul>
+    <span class="navbar-text">
+      <a class="nav-link active col-md-6" href="payform.html"><img border ="0" alt="image\Back_icon.png" src="image\Back_icon.png" width="25" height="25" style="vertical-align:middle;margin:0px 7px"></a>
+    </span>
+  </div>
+</nav>
+<!--this nav for yolow lin e desighn-->
+<nav class="navbar bg-warning text-dark "></nav>
+<!-- Just an image -->
+
+
+  
+
+
+<!--nav1 Sighn up sign in nav start-->
+
+<ul class="nav justify-content-end">
+  <li class="nav-item col-md-6"></li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sighn Up</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Login</a>
+  </li>
+ 
+</ul>
+<hr>
+  
+<!--nav1 End-->
+
+<!--navbar 2 start nav tab-->
+                        
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                              <a class="nav-item nav-link active" id="Card" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">CARD</a>
+                              <a class="nav-item nav-link" id="MobileBanking" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">MOBILE BANKING</a>
+                              <a class="nav-item nav-link" id="iBanking" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">I BANKING</a>
+                              <a class="nav-item nav-link" id="OtherCards" data-toggle="tab" href="#nav-contact2" role="tab" aria-controls="nav-contact2" aria-selected="false">OTHERS CARDS</a>
+                            </div>
+                          </nav>
+                          
+                           <!--card body start-->
+
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                
+                                <!--First colann start card pay--> 
+                                <nav class="navbar navbar-light bg-light">
+                                  <img src="image/visa_Amex.png" width="120" height="30" class="d-inline-block align-top" alt="VISA Master Amex" loading="lazy">
+                                  <div class="container" style=" margin: 0;auto; padding-left: 2rem;">
+                                <form>
+                                  <div class="form-group">
+                                       <br>
+                                        <input type="text" class="form-control" id="CardNumber" placeholder="Enter Card Number">
+                                      </div>
+                                      
+                                    <div class="form-row">
+                                      <div class="form-group col-lg-6">
+                                        <!--<label for="inputEmail4">Email</label>-->
+                                        <input type="text"class="form-control" id="MM/YY" placeholder="MM/YY">
+                                      </div>
+                                      <div class="form-group col-md-6">
+                                        <!--<label for="inputPassword4">Password</label>-->
+                                        <input type="text" class="form-control" id="CVC/CVV"  placeholder="CVC/CVV" >
+                                      </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                      <!--<label for="inputAddress2">Address 2</label>-->
+                                      <input type="text" class="form-control" id="CardholderName" placeholder="Enter Card Holder Name">
+                                    </div>
+                                    <!--submit-->
+                                    <div class="col-auto my-1">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                                          
+                                          <label class="form-check-label" for="autoSizingCheck2">
+                                            <p class="text-primary">Remember Me</p>
+                                          </label>
+                                         
+                                        </div>
+                                      </div>
+                                      <button type="button" class="btn btn-primary btn-lg btn-block">PAY
+                                      </button>
+
+
+                                    <!--submit-->
+                                   </form>
+                                  </div>
+                                </div>
+
+                            <!--first colan end-->
+
+                            <!--Seconnd colam start  M-banking-->
+                            
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"> <br>
+                                 
+                              <a href="https://www.akash.com">
+                              <img border ="0" alt="bkash" src="image/bkash-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                      
+                          <a href="https://www.roket.com">
+                              <img border ="0" alt="Rocket" src="image/dbbl_mobile-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                          
+                          <a href="https://www.nogod.com">
+                              <img border ="0" alt="Nagod" src="image/Nagod-sq.jpg" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a> 
+                              
+                          <a href="https://www.MCash.com">
+                                  <img border ="0" alt="MCash" src="image/mcash-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr>
+                      
+                          <a href="https://www.ucash.com">
+                              <img border ="0" alt="Ucash" src="image\Ucash_sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a> 
+                          
+                          <a href="https://www.my-cash.com">
+                              <img border ="0" alt="my-cash" src="image/my-cash-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a> 
+                              
+                          <a href="https://www.telecash.com">
+                              <img border ="0" alt="telecash" src="image/telecash_sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                      
+                          <a href="https://www.okwallet.com">
+                              <img border ="0" alt="okwallet" src="image/okwallet-sq.png"width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr>
+                          
+                          <a href="https://www.surecash.com">
+                              <img border ="0" alt="surecash" src="image/surecash.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                          
+                          <a href="https://www.tcash.com">
+                              <img border ="0" alt="tcash" src="image/tcash.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>  
+                              
+                          <a href="https://www.dmoney.com">
+                              <img border ="0" alt="dmoney" src="image/dmoney.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr>
+                              </div>
+
+                              <!--sECOND  colan end-->
+
+                              <!--thirt clo start i bangking-->
+
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                              <br>
+                                
+                                <a href="https://www.abbank.com">
+                                    <img border ="0" alt="ABDirect" src="image/ab_direct-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                            
+                                <a href="https://www.ibbl.com">
+                                    <img border ="0" alt="IslamiBank" src="image/islamibank-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                                
+                                <a href="https://www.mtbl.com">
+                                    <img border ="0" alt="MTB" src="image/mtb-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a> 
+                                    
+                                <a href="https://www.akash.com">
+                                        <img border ="0" alt="Upay" src="image/upay-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr> 
+                            
+                                <a href="https://www.bankasia.com">
+                                    <img border ="0" alt="BankAshia" src="image/bankasia-sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                                
+                                <a href="https://www.citytouch.com">
+                                    <img border ="0" alt="CityTouch" src="image/city_touch_sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a> 
+                                    
+                                <a href="https://www.ipay.com">
+                                    <img border ="0" alt="ipay" src="image/ipay_sq.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a>
+                            
+                                <a href="https://www.Tapnpay.com">
+                                    <img border ="0" alt="TapnPay" src="image/tapnpay-sq.png"width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr>
+                                
+                                <a href="https://www.sebl.com">
+                                    <img border ="0" alt="SEBL" src="image/sebl.png" width="105" height="70" style="vertical-align:middle;margin:0px 7px"></a><hr> 
+                                    
+                                    
+                                      
+                                   
+                              </div>
+
+                             <!--tHIRD colan end-->
+
+                             <!--forth card start other card-->
+
+                             <div class="tab-pane fade" id="nav-contact2" role="tabpanel" aria-labelledby="nav-contact-tab2">
+                              <br>
+                                
+                              <br><hr>
+                              <a href="https://www.DBBLlink.com">
+                                <img border ="0" alt="DBBLNEXAS" src="image/dbbl.png" width="145" height="90" style="vertical-align:middle;margin:0px 7px"></a>
+                        
+                            <a href="https://www.DBBLlink.com">
+                                <img border ="0" alt="dbblvisa" src="image/Dbbl_visa_pn.png" width="145" height="90" style="vertical-align:middle;margin:0px 7px"></a>
+                            
+                            <a href="https://www.DBBLlink.com">
+                                <img border ="0" alt="MTB" src="image/dbbl_master.png" width="145" height="90" style="vertical-align:middle;margin:0px 7px" ></a> <hr>
+                                
+                            <a href="https://www.unionpaybd.com">
+                                    <img border ="0" alt="Upay" src="image/unionpay.png" width="145" height="90" style="vertical-align:middle;margin:0px 7px"></a><hr>
+
+                                        
+                              </div>
+
+
+                             <!--forth cards end other cards-->
+
+                          </div>
+                    </div>
+                  </div>
+                </div>
+<!--card on card / second cars end-->
+<!-- image card text    
+  <div class="card bg-dark text-white">
+            <img src="img/back.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Last updated 3 mins ago</p>-->
+              
+              <!--image card dive end-->
+            
+         
+    
+    
+  <div>
+ 
+    <footer style="background-color: black;  text-align: center;">
+
+      <div class="container col-lg-4 col-lg-offset-4">
+        
+        <br><img src="image/Bank_logo.png"; width="430" height="150"  > <br><br>
+      </div>
+
+     
+    
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="www.facebook.com"><img border ="0" alt="mali logo" src="image\facebooklogo.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a> <span class="sr-only"></span></a></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img border ="0" alt="mali logo" src="image/Youtubelogo.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img border ="0" alt="mali logo" src="image\Twitwe.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="www.instagram.com"><img border ="0" alt="instagram logo" src="image/Instagram.png" width="30" height="27" style="vertical-align:middle;margin:0px 7px"></a></a>
+      </li>
+     
+    </ul>
+    <br>
+
+    <P style="color:white;"> <small>© 2020 Silicon ICT Limited. All Rights Reserved</small> </p></P>
+
+
+   </footer></div>
+   <script src="myscripts.js"></script>
+   <script src=index.js></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
